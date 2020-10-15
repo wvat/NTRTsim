@@ -1,0 +1,21 @@
+nodes:
+        center: [0, 5, 0]
+        top: [-9, 10, 0]
+        bot: [-9, 0, 0]
+        left: [3, 5, -6]
+        right: [3, 5, 6]
+
+pair_groups:
+         rod:
+                 - [center, top]
+                 - [center, bot]
+                 - [center, left]
+                 - [center, right]
+
+builders:
+        rod:
+                class: tgRodInfo
+                parameters:
+                        density: 0.014
+                        radius: 0.5
+

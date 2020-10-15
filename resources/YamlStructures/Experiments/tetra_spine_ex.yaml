@@ -1,0 +1,16 @@
+substructures:
+        t1/t2:
+                path: ../BaseStructures/Tetrahedron.yaml
+                offset: [0, 0, -15]
+bond_groups:
+        string:
+                t1/t2/node_node:
+                        - [front, front]
+                        - [right,right]
+                        - [back, back]
+                        - [left, left]
+                        - [right, front]
+                        - [right, left]
+                        - [back, front]
+                        - [back, left]
+

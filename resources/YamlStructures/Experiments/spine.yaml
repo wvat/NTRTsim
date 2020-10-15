@@ -1,0 +1,38 @@
+substructures:
+        t1/t2/t3:
+                path: vertebrae.yaml
+                offset: [-9, 0 ,0]
+                translation: [0, 6, 0]
+
+        leg_front_right/leg_front_left/leg_back_right/leg_back_left:
+                path: leg.yaml
+
+        leg_front_right:
+                translation: [0, 0, 5]
+        leg_front_left:
+                translation: [0, 0, -5]
+        leg_back_right:
+                translation: [-18, 0, 5]
+        leg_back_left:
+                translation: [-18, 0, -5]
+bond_groups:
+        rod:
+                t1/leg_front_right/node_node:
+                        - [center, hip]
+                t1/leg_front_left/node_node:
+                        - [center, hip]
+                t3/leg_back_right/node_node:
+                        - [center, hip]
+                t3/leg_back_left/node_node:
+                        - [center, hip]
+        string:
+                t1/t2/t3/node_node:
+                        - [top, top]
+                        - [right, right]
+                        - [bot, bot]
+                        - [left, left]
+
+                        - [top, right]
+                        - [top, left]
+                        - [bot, right]
+                        - [bot, left] 

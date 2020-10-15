@@ -1,0 +1,11 @@
+nodes:
+        hip: [0, 10, 0]
+        elbow: [-3, 5, 0]
+        pad1: [0, 0, -2]
+        pad2: [0, 0, 2]
+
+pair_groups:
+        rod:
+                - [hip, elbow]
+                - [elbow, pad1]
+                - [elbow, pad2]
